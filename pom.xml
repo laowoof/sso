@@ -13,7 +13,7 @@
 </description>
     
     <properties>
-        <cas.version>5.1.0</cas.version>
+        <cas.version>5.2.3</cas.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <springboot.version>1.5.3.RELEASE</springboot.version>
@@ -21,14 +21,47 @@
     </properties>
 
     <dependencies>
-
+        <!-- tomcat下webapp模板 -->
         <dependency>
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-webapp-tomcat</artifactId>
             <version>${cas.version}</version>
+            <type>war</type>
             <scope>runtime</scope>
         </dependency>
-
+        <!-- 使用jpa获取service -->
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-jpa-service-registry</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+        <!-- 数据库项目，驱动等 -->
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-jdbc</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-jdbc-drivers</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc7</artifactId>
+            <version>12.1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.36</version>
+        </dependency>
+        <!-- cas-server提供oauth2.0功能 -->
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-oauth-webflow</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
