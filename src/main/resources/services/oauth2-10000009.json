@@ -3,7 +3,7 @@
   "clientId": "clientid",
   "clientSecret": "clientSecret",
   "bypassApprovalPrompt": false,
-  "serviceId" : "^(http|imaps)://172.17.118.215.*",
+  "serviceId" : "^(http|imaps)://localhost.*",
   "name" : "HTTPS and IMAPS",
   "id" : 10000009
 }
