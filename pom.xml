@@ -30,11 +30,11 @@
             <scope>runtime</scope>
         </dependency>
         <!-- 使用jpa获取service -->
-        <dependency>
-            <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-support-jpa-service-registry</artifactId>
-            <version>${cas.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apereo.cas</groupId>-->
+            <!--<artifactId>cas-server-support-jpa-service-registry</artifactId>-->
+            <!--<version>${cas.version}</version>-->
+        <!--</dependency>-->
         <!-- 数据库项目，驱动等 -->
         <dependency>
             <groupId>org.apereo.cas</groupId>
@@ -60,6 +60,12 @@
         <dependency>
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-support-oauth-webflow</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-rest</artifactId>
             <version>${cas.version}</version>
         </dependency>
     </dependencies>
