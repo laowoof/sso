@@ -1,86 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <!--<title th:text="${#themes.code('demo.pageTitle')}"></title>-->
     <link rel="stylesheet" th:href="@{${#themes.code('standard.custom.css.file')}}"/>
-    <script type="text/javascript"  th:src="@{${#themes.code('ie.javascript.file')}}"></script>
-    <script>DD_belatedPNG.fix('*');</script>
 </head>
 
 <body>
-<!--<h1 th:text="${#themes.code('demo.pageTitle')}"></h1>-->
-<div class="login_content" id="main">
-    <form method="post" th:object="${credential}">
-        <div th:if="${#fields.hasErrors('*')}">
-            <span th:each="err : ${#fields.errors('*')}" th:utext="${err}"/>
+<div class="logbg">
+    <div class="zjbf">
+        <div class="login_bz">
+            <div class="loginbz"></div>
         </div>
-    <input id="username" name="policeNum" type="text" class="name required"
-           th:disabled="${guaEnabled}"
-           th:field="*{username}"
-           th:accesskey="#{screen.welcome.label.netid.accesskey}"
-           autocomplete="off"/>
-    <input id="password" name="password" type="password" class="password"
-           th:accesskey="#{screen.welcome.label.password.accesskey}"
-           th:field="*{password}"
-           autocomplete="off"/>
-        <input type="hidden" name="execution" th:value="${flowExecutionKey}"/>
-        <input type="hidden" name="_eventId" value="submit"/>
-        <input type="hidden" name="geolocation"/>
-    <input type="submit" value="登录"  class="bogin_btn01" id="btn_login" name="submit" accesskey="l"/>
-    <input name="btn02" type="button" value="key登录" class="bogin_btn02" id="keylogin"/>
-    </form>
+        <div class="logincon">
+            <form method="post" th:object="${credential}">
+                <div th:if="${#fields.hasErrors('*')}" style="text-align:center;color:red;">
+                    <span th:each="err : ${#fields.errors('*')}" th:utext="${err}"/>
+                </div>
+                <div class="lognr">
+                    <div class="yih user">
+                        <input id="username" name="policeNum"  type="text" class="name required iput"
+                               th:disabled="${guaEnabled}"
+                               th:field="*{username}"
+                               th:accesskey="#{screen.welcome.label.netid.accesskey}"
+                               autocomplete="off"/>
+                    </div>
+                    <div class="yih pwd">
+                        <input id="password" name="password" type="password" class="password iput"
+                               th:accesskey="#{screen.welcome.label.password.accesskey}"
+                               th:field="*{password}"
+                               autocomplete="off"/>
+                    </div>
+
+                    <input type="hidden" name="execution" th:value="${flowExecutionKey}"/>
+                    <input type="hidden" name="_eventId" value="submit"/>
+                    <input type="hidden" name="geolocation"/>
+                    <input type="submit" value="登  录" class="btndl" name="submit" accesskey="l" />
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
-<!--<div>
-    <form method="post" th:object="${credential}">
-        <div th:if="${#fields.hasErrors('*')}">
-            <span th:each="err : ${#fields.errors('*')}" th:utext="${err}"/>
-        </div>
-        <h2 th:utext="#{screen.welcome.instructions}"></h2>
-
-        <section class="row">
-            <label for="username" th:utext="#{screen.welcome.label.netid}"/>
-            <div th:unless="${openIdLocalId}">
-                <input class="required"
-                       id="username"
-                       size="25"
-                       tabindex="1"
-                       type="text"
-                       th:disabled="${guaEnabled}"
-                       th:field="*{username}"
-                       th:accesskey="#{screen.welcome.label.netid.accesskey}"
-                       autocomplete="off"/>
-            </div>
-        </section>
-
-        <section class="row">
-            <label for="password" th:utext="#{screen.welcome.label.password}"/>
-            <div>
-                <input class="required"
-                       type="password"
-                       id="password"
-                       size="25"
-                       tabindex="2"
-                       th:accesskey="#{screen.welcome.label.password.accesskey}"
-                       th:field="*{password}"
-                       autocomplete="off"/>
-            </div>
-        </section>
-
-        <section>
-            <input type="hidden" name="execution" th:value="${flowExecutionKey}"/>
-            <input type="hidden" name="_eventId" value="submit"/>
-            <input type="hidden" name="geolocation"/>
-            <input class="btn btn-submit btn-block"
-                   name="submit"
-                   accesskey="l"
-                   th:value="#{screen.welcome.button.login}"
-                   tabindex="6"
-                   type="submit"/>
-        </section>
-    </form>
-</div>-->
 </body>
 </html>
