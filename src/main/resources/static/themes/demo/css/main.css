@@ -1,222 +1,1163 @@
-body,html{height: 100%;font-family: "微软雅黑";}
-*{margin: 0;padding: 0;}
-input[type="submit"],
- input[type="reset"],
- input[type="button"],
-  input[type="text"],
- button,textarea { -webkit-appearance: none; box-shadow:none; border-radius: 0px;}
- input{outline: none;border: none;}
- input {font-family: "微软雅黑";}
- input[type="button"] {-webkit-tap-highlight-color: rgba(0,0,0,0);}
- ul,li {list-style: none;}
- a{text-decoration: none;outline:none ;color: #fff; border: none;}
- ::-webkit-scrollbar{height:0px;width:0px;}
- 
-.top{width: 100%; height: 126px;float: left;background: url(../img/top-bg.png) no-repeat center center; background-size:cover; padding: 0 16px 0 35px;box-sizing: border-box; border-bottom: 2px solid #1a3566;}
-.top .tpnr{width: 100%; height: 124px;float: left;}
-.top .tpnr .jw{height: 64px;float: left;margin-top:32px;}
-.top .tpnr .rtim{width: 46px;height: 46px;float: right;margin-top: 39px; margin-right: 10px; cursor: pointer;}
-.top .tpnr .rtdiv{width: 46px;height: 46px;float: right;margin-top: 39px; margin-right: 10px; position: relative;}
-.top .tpnr .rtdiv p{width: 16px;height: 16px;background: url(../img/msg-num.png)no-repeat center center; text-align: center;font-family:'SourceSansPro Regular'; font-size:12px; color: #FFFFFF; line-height: 16px;position: absolute;top: 3px;right: 1px;}
+body, html {
+	min-width: 1300px;
+	height: 100%;
+	font-family: "微软雅黑";
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+input[type="submit"], input[type="reset"], input[type="button"], input[type="text"], button, textarea {
+	-webkit-appearance: none;
+	box-shadow: none;
+	border-radius: 0px;
+}
+input {
+	outline: none;
+	border: none;
+}
+input {
+	font-family: "微软雅黑";
+}
+input[type="button"] {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ul, li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	border: none;
+}
 
-.bobo{width:100%;float: left; position: relative;}
-.bobo .lfbo{width: 240px;height: 100%; position: absolute;top: 0px;left: 0px;background: url(../img/lf-bg.png) no-repeat center center; background-size: cover;}
-.bobo .rtbo{width: 238px;height: 100%; position: absolute;top: 0px;right: 0px;}
-.bobo .cenbo{width: 100%; height: 100%; float: left;padding: 0px 238px 0px  240px;box-sizing: border-box;}
+/*::-webkit-scrollbar{height:0px;width:0px;}*/
+
+.top {
+	width: 100%;
+	height: 126px;
+	float: left;
+	background: url(../img/top-bg.png) no-repeat center center;
+	background-size: cover;
+	padding: 0 16px 0 35px;
+	box-sizing: border-box;
+	border-bottom: 2px solid #1a3566;
+}
+.top .tpnr {
+	width: 100%;
+	height: 124px;
+	float: left;
+}
+.top .tpnr .jw {
+	height: 64px;
+	float: left;
+	margin-top: 32px;
+}
+.top .tpnr .rtim {
+	width: 46px;
+	height: 46px;
+	float: right;
+	margin-top: 39px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.top .tpnr .rtdiv {
+	width: 46px;
+	height: 46px;
+	float: right;
+	margin-top: 39px;
+	margin-right: 10px;
+	position: relative;
+}
+.top .tpnr .rtdiv p {
+	width: 16px;
+	height: 16px;
+	background: url(../img/msg-num.png)no-repeat center center;
+	text-align: center;
+	font-family: 'SourceSansPro Regular';
+	font-size: 12px;
+	color: #FFFFFF;
+	line-height: 16px;
+	position: absolute;
+	top: 3px;
+	right: 1px;
+}
+.bobo {
+	width: 100%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.bobo .lfbo {
+	width: 240px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url(../img/lf-bg.png) no-repeat center center;
+	background-size: cover;
+}
+.bobo .rtbo {
+	width: 238px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: #e7e7f3;
+}
+.bobo .cenbo {
+	width: 100%;
+	height: 100%;
+	float: left;
+	padding: 0px 238px 0px 240px;
+	box-sizing: border-box;
+}
+
 /*左边*/
-.bobo .lfbo .tx{width: 100%;height: 108px;float: left;margin-top: 25px;}
-.bobo .lfbo .tx img {width: 108px; display: block;margin: 0 auto;}
-.bobo .lfbo .xm{width: 100%; height: 50px;float:left;line-height: 50px;font-size: 20px; color: #FFFFFF;font-weight: bold;text-align: center;}
-.bobo .lfbo .grxx{width: 100%;height: 31px;float: left; line-height: 30px; border-bottom:1px solid #7face8; font-size: 14px;color: #FFFFFF;text-indent: 47px;}
-.bobo .lfbo .grxx.jh{background: url(../img/jh-icon.png)no-repeat 15px center;}
-.bobo .lfbo .grxx.jx{background: url(../img/jx-icon.png)no-repeat 15px center;}
-.bobo .lfbo .grxx.zw{background: url(../img/zw-icon.png)no-repeat 15px center;}
-.bobo .lfbo .grxx.dw{background: url(../img/dw-icon.png)no-repeat 15px center;}
-.bobo .lfbo .grxx.bm{background: url(../img/bm-icon.png)no-repeat 15px center;}
-.bobo .lfbo .zgtt {width: 100%;height: 32px;float: left; margin: 18px 0 12px 0;}
-.bobo .lfbo .zgtt .tt{float: left;}
-.bobo .lfbo .zgtt .more{width: 56px;height: 22px;float: right;background: url(../img/gd-bg.png) no-repeat center center; line-height: 22px; font-size: 12px; text-align: center; color: #FFFFFF;margin:5px 8px 5px 0px; }
-.bobo .lfbo .wb{width: 100%; float: left; overflow: hidden; position: relative;}
-.bobo .lfbo .wb .nb{width: 100%; float: left;}
-.bobo .lfbo .wb .nb .ttxx{width:100%; height: 51px; float: left; padding: 0 15px;box-sizing: border-box;} /**/
-.bobo .lfbo .wb .nb .ttxx .bt{width: 100%;height: 30px;float: left;font-size: 14px;line-height: 30px;color: #FFFFFF; overflow: hidden;text-overflow: ellipsis; white-space: nowrap;cursor: pointer;}
-.bobo .lfbo .wb .nb .ttxx .sj{width: 100%; height: 21px; float: left;border-bottom: 1px dashed #769dd8; line-height: 20px;font-size: 12px; color: #9abaff;cursor: pointer;}
+
+.bobo .lfbo .tx {
+	width: 100%;
+	height: 108px;
+	float: left;
+	margin-top: 25px;
+}
+.bobo .lfbo .tx img {
+	width: 108px;
+	display: block;
+	margin: 0 auto;
+}
+.bobo .lfbo .xm {
+	width: 100%;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	font-size: 20px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+}
+.bobo .lfbo .grxx {
+	width: 100%;
+	height: 31px;
+	float: left;
+	line-height: 30px;
+	border-bottom: 1px solid #7face8;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-indent: 47px;
+}
+.bobo .lfbo .grxx.jh {
+	background: url(../img/jh-icon.png)no-repeat 15px center;
+}
+.bobo .lfbo .grxx.jx {
+	background: url(../img/jx-icon.png)no-repeat 15px center;
+}
+.bobo .lfbo .grxx.zw {
+	background: url(../img/zw-icon.png)no-repeat 15px center;
+}
+.bobo .lfbo .grxx.dw {
+	background: url(../img/dw-icon.png)no-repeat 15px center;
+}
+.bobo .lfbo .grxx.bm {
+	background: url(../img/bm-icon.png)no-repeat 15px center;
+}
+.bobo .lfbo .zgtt {
+	width: 100%;
+	height: 32px;
+	float: left;
+	margin: 18px 0 12px 0;
+}
+.bobo .lfbo .zgtt .tt {
+	float: left;
+}
+.bobo .lfbo .zgtt .more {
+	width: 56px;
+	height: 22px;
+	float: right;
+	background: url(../img/gd-bg.png) no-repeat center center;
+	line-height: 22px;
+	font-size: 12px;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 5px 8px 5px 0px;
+}
+.bobo .lfbo .wb {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.bobo .lfbo .wb .nb {
+	width: 100%;
+	float: left;
+}
+.bobo .lfbo .wb .nb .ttxx {
+	width: 100%;
+	height: 51px;
+	float: left;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+/**/
+
+.bobo .lfbo .wb .nb .ttxx .bt {
+	width: 100%;
+	height: 30px;
+	float: left;
+	font-size: 14px;
+	line-height: 30px;
+	color: #FFFFFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.bobo .lfbo .wb .nb .ttxx .sj {
+	width: 100%;
+	height: 21px;
+	float: left;
+	border-bottom: 1px dashed #769dd8;
+	line-height: 20px;
+	font-size: 12px;
+	color: #9abaff;
+	cursor: pointer;
+}
+
 /*右边*/
-.bobo .rtbo .jydiv{width: 100%; height: 420px;float: left;background: #e7e7f3;}
-.bobo .rtbo .jydiv .jysear{width: 100%; height: 54px;float: left; padding:11px 11px 10px 11px; box-sizing: border-box; border-bottom: 1px solid #d7d7e3;}
-.bobo .rtbo .jydiv .jysear .searbo{width: 100%; height: 32px;float: left; background: url(../img/sear-bg.png) no-repeat center center; position: relative;  padding: 0 12px;box-sizing: border-box; position: relative;}
-.bobo .rtbo .jydiv .jysear .searbo .iptsear{width:100%; height: 32px;float: left;line-height: 32px; padding-right: 18px; box-sizing: border-box;}
-.bobo .rtbo .jydiv .jysear .searbo .searbtn{width: 17px;height: 17px;float: right; background: url(../img/sear-icon.png) no-repeat center center; position: absolute;top:7.5px; right: 10px;}
-.bobo .rtbo .jydiv .sxlb{width: 100%; height: 366px;float: left; padding:12px;box-sizing: border-box; position: relative;}
-.bobo .rtbo .jydiv .sxlb .lbk{width: 33.33%; height: 85px;float: left; cursor: pointer;}
-.bobo .rtbo .jydiv .sxlb .lbk .lbim{width: 100%; height: 48px;float: left; margin: 10px 0 5px 0px;}
-.bobo .rtbo .jydiv .sxlb .lbk .lbim img{width: 48px;height: 48px;display: block;margin: 0 auto;}
-.bobo .rtbo .jydiv .sxlb .lbk p{width: 100%; height: 20px; float: left;line-height: 20px;font-size: 14px;color: #222;text-align: center;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
-.bobo .rtbo .jydiv .sxlb i{width: 10px; height: 6px; position: absolute; left: 114px;}
-.bobo .rtbo .jydiv .sxlb i.shang{background: url(../img/shang-icon.png) no-repeat center center; top: 6px; }
-.bobo .rtbo .jydiv .sxlb i.xia{background: url(../img/xia-icon.png) no-repeat center center; bottom: 3px; }
-.bobo .rtbo .ggmk{width: 100%; float: left;background: #e7e7f3;}
-.bobo .rtbo .ggmk .tbqh{width: 100%; height: 44px;float: left;background: #FFFFFF;border-bottom: 2px solid #c4cddd; position: relative;}
-.bobo .rtbo .ggmk .tbqh p{width: 90px;height: 44px;float: left;line-height: 44px; font-size: 16px;color: #333; text-align: center; cursor: pointer;}
-.bobo .rtbo .ggmk .tbqh p.hov{color: #222222;font-weight: bold;}
-.bobo .rtbo .ggmk .tbqh span{height: 44px;line-height: 44px; float: right;margin-right: 5px;font-size: 12px;color: #0893f3; cursor: pointer;}
-.bobo .rtbo .ggmk .tbqh i{width: 90px;height: 2px; background: #2e5eb5; position: absolute;bottom: -2px;left: 0px; transition: all 0.5s ease-in-out;}
-.bobo .rtbo .ggmk .qhbo{width: 100%; float: left; overflow: hidden;}
-.bobo .rtbo .ggmk .qhbo .qh{width: 476px;height: 100%;float: left;transition: all 0.5s ease-in-out;}
-.bobo .rtbo .ggmk .qhbo .qh .tzdb{width: 238px;height: 100%;float: left; overflow: hidden; position: relative;}
-.bobo .rtbo .ggmk .qhbo .qh .tzdb .tznb{width: 238px;float: left;}
-.bobo .rtbo .ggmk .qhbo .qh .tzdb .tznb .ttxx{width:100%; height: 51px; float: left; padding: 0 15px;box-sizing: border-box;} /**/
-.bobo .rtbo .ggmk .qhbo .qh .tzdb .tznb .ttxx .bt{width: 100%;height: 30px;float: left;font-size: 14px;line-height: 30px;color: #333; overflow: hidden;text-overflow: ellipsis; white-space: nowrap; cursor: pointer; border-bottom: 1px solid #e7e7f3;}
-.bobo .rtbo .ggmk .qhbo .qh .tzdb .tznb .ttxx .bt:hover{color: #6386e1;border-bottom: 1px solid #6386e1;}
-.bobo .rtbo .ggmk .qhbo .qh .tzdb .tznb .ttxx .sj{width: 100%; height: 21px; float: left;border-bottom: 1px dashed #999999; line-height: 20px;font-size: 12px; color: #999999;cursor: pointer;}
+
+.bobo .rtbo .jydiv {
+	width: 100%;
+	height: 511px;
+	float: left;
+	background: #e7e7f3;
+}
+.bobo .rtbo .jydiv .jysear {
+	width: 100%;
+	height: 54px;
+	float: left;
+	padding: 11px 11px 10px 11px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #d7d7e3;
+}
+.bobo .rtbo .jydiv .jysear .searbo {
+	width: 100%;
+	height: 32px;
+	float: left;
+	background: url(../img/sear-bg.png) no-repeat center center;
+	position: relative;
+	padding: 0 12px;
+	box-sizing: border-box;
+	position: relative;
+}
+.bobo .rtbo .jydiv .jysear .searbo .iptsear {
+	width: 100%;
+	height: 32px;
+	float: left;
+	line-height: 32px;
+	padding-right: 18px;
+	box-sizing: border-box;
+}
+.bobo .rtbo .jydiv .jysear .searbo .searbtn {
+	width: 17px;
+	height: 17px;
+	float: right;
+	background: url(../img/sear-icon.png) no-repeat center center;
+	position: absolute;
+	top: 7.5px;
+	right: 10px;
+}
+.bobo .rtbo .jydiv .sxlb {
+	width: 100%;
+	height: 451px;
+	float: left;
+	padding: 12px;
+	box-sizing: border-box;
+	position: relative;
+}
+.lbk {
+	width: 33.33%;
+	height: 110px;
+	float: left;
+	cursor: pointer;
+}
+.lbk .lbim {
+	width: 100%;
+	height: 48px;
+	float: left;
+	margin: 10px 0 5px 0px;
+	position: relative;
+	text-align: center;
+}
+
+.lbk .lbim_new {
+	width: 100%;
+	height: 54px;
+	float: left;
+	margin: 10px 0 5px 0px;
+	position: relative;
+	text-align: center;
+}
+.lbk .lbim_new .mask{width: 54px; height: 54px; float: left; margin-left: 8px; transition: all 0.3s; background: url(../img/mask.png) no-repeat left top;}
+.lbk .lbim_new .mask:hover{background: url(../img/mask.png) no-repeat -64px 0px;}
+.lbk .lbim_new .mask i{width: 32px; height: 32px; display: inline-block; float: left; z-index: 22;transition: all 0.2s ease-out; position: relative; left: 11px; top: 12px;}
+.lbk .lbim_new .mask i.gbrsgl{background: url(../img/gbrsgl_slider.png) no-repeat -27px 0px;}
+.lbk .lbim_new .mask i.ltxgbgl{background: url(../img/ltxgb_slider.png) no-repeat -36px 0px;}
+.lbk .lbim_new .mask i.fjrygl{background: url(../img/fjyygl_slider.png) no-repeat -38px 0px;}
+.lbk .lbim_new .mask i.bzjlgl{background: url(../img/bzjlgl_slider.png) no-repeat -38px 0px;}
+.lbk .lbim_new .mask i.jyxlgl{background: url(../img/jyxlgl_slider.png) no-repeat -46px 0px;}
+.lbk .lbim_new .mask i.fxydgl{background: url(../img/fxydgl_slider.png) no-repeat -41px 0px;}
+.lbk .lbim_new .mask i.djgl{background: url(../img/djgl_slider.png) no-repeat -41px 0px;}
+.lbk .lbim_new .mask i.zzgl{background: url(../img/zzgl_slider.png) no-repeat -45px 0px;}
+.lbk .lbim_new .mask i.mjzysygl{background: url(../img/mjzysygl_slider.png) no-repeat -41px 0px;}
+.lbk .lbim_new .mask i.wdda{background: url(../img/wdda_slider.png) no-repeat -29px 0px;}
+.lbk .lbim_new .mask i.jxkh{background: url(../img/jxkk_slider.png) no-repeat -37px 0px;}
+
+
+.lbk .lbim_new .mask:hover i.gbrsgl{background: url(../img/gbrsgl_slider.png) no-repeat 3px 0px;}
+.lbk .lbim_new .mask:hover i.ltxgbgl{background: url(../img/ltxgb_slider.png) no-repeat 0px 0px;}
+.lbk .lbim_new .mask:hover i.fjrygl{background: url(../img/fjyygl_slider.png) no-repeat 0px 0px;}
+.lbk .lbim_new .mask:hover i.bzjlgl{background: url(../img/bzjlgl_slider.png) no-repeat 0px 0px;}
+.lbk .lbim_new .mask:hover i.jyxlgl{background: url(../img/jyxlgl_slider.png) no-repeat -2px 0px;}
+.lbk .lbim_new .mask:hover i.fxydgl{background: url(../img/fxydgl_slider.png) no-repeat 0px 0px;}
+.lbk .lbim_new .mask:hover i.djgl{background: url(../img/djgl_slider.png) no-repeat 0px 0px;}
+.lbk .lbim_new .mask:hover i.zzgl{background: url(../img/zzgl_slider.png) no-repeat 0px 0px;}
+.lbk .lbim_new .mask:hover i.mjzysygl{background: url(../img/mjzysygl_slider.png) no-repeat 0px 0px;}
+.lbk .lbim_new .mask:hover i.wdda{background: url(../img/wdda_slider.png) no-repeat 0px 0px;}
+.lbk .lbim_new .mask:hover i.jxkh{background: url(../img/jxkk_slider.png) no-repeat 0px 0px;}
+
+.lbk .lbim_new .add{width: 48px; height: 48px;background: url(../img/add.png) no-repeat 0px 0px; display: inline-block; float: left; z-index: 22;transition: all 0.2s ease-out; position: relative; left: 11px; top: 4px;}
+
+.lbk .lbim .tbdv {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -24px;
+	margin-left: -24px;
+	border-radius: 5px;
+}
+.lbk .lbim .tbdv.gbrs {
+	background: #3296fa url(../img/rt_img/gbrsgl.png) no-repeat center center;
+}
+.lbk .lbim .tbdv:hover.gbrs {
+	background: url(../img/rt_img/gbrsgl_hov.png) no-repeat center center;
+}
+.lbk .lbim .tbdv .inner {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -24px;
+	margin-left: -24px;
+	border-radius: 5px;
+}
+.tbdv:before, .tbdv:after, .tbdv .inner:before, .tbdv .inner:after {
+	background-color: #3296fa;
+}
+.tbdv:before, .tbdv:after, .tbdv .inner:before, .tbdv .inner:after {
+	content: "";
+	position: absolute;
+	display: block;
+	border-radius: 5px;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.borderlf .inner:before {
+	-webkit-transform-origin: bottom center;
+	transform-origin: bottom center;
+}
+.borderlf .inner:after {
+	-webkit-transform-origin: top center;
+	transform-origin: top center;
+}
+.borderlf:before {
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+}
+.borderlf:after {
+	-webkit-transform-origin: right center;
+	transform-origin: right center;
+}
+.borderlf:hover .inner:before {
+	-webkit-transform-origin: top center;
+	transform-origin: top center;
+}
+.borderlf:hover .inner:after {
+	-webkit-transform-origin: bottom center;
+	transform-origin: bottom center;
+}
+.borderlf:hover:before {
+	-webkit-transform-origin: right center;
+	transform-origin: right center;
+}
+.borderlf:hover:after {
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+}
+.tbdv.both:before, .tbdv.both:after {
+	left: 0;
+	width: 100%;
+	height: 2px;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+}
+.tbdv.both .inner:before, .tbdv.both .inner:after {
+	top: 0;
+	width: 2px;
+	height: 100%;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+}
+.tbdv.both .inner:before {
+	left: 0;
+}
+.tbdv.both .inner:after {
+	right: 0;
+}
+.tbdv.both .inner:hover:before, .tbdv.both .inner:hover:after {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+}
+.tbdv.both .inner:hover:before, .tbdv.both .inner:hover:after {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+}
+.tbdv.both:before {
+	top: 0;
+}
+.tbdv.both:after {
+	bottom: 0;
+}
+.tbdv.both:hover:before, .tbdv.both:hover:after {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+.tbdv.both:hover .inner:before, .tbdv.both:hover .inner:after {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+}
+.lbk p {
+	width: 100%;
+	height: 40px;
+	float: left;
+	line-height: 20px;
+	font-size: 14px;
+	color: #222;
+	text-align: center;
+	overflow: hidden;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+.bobo .rtbo .jydiv .sxlb > i {
+	width: 10px;
+	height: 6px;
+	position: absolute;
+	left: 114px;
+}
+.bobo .rtbo .jydiv .sxlb > i.shang {
+	background: url(../img/shang-icon.png) no-repeat center center;
+	top: 6px;
+}
+.bobo .rtbo .jydiv .sxlb > i.xia {
+	background: url(../img/xia-icon.png) no-repeat center center;
+	bottom: 3px;
+}
+.bobo .rtbo .ggmk {
+	width: 100%;
+	float: left;
+	background: #e7e7f3;
+}
+.bobo .rtbo .ggmk .tbqh {
+	width: 100%;
+	height: 44px;
+	float: left;
+	background: #FFFFFF;
+	border-bottom: 2px solid #c4cddd;
+	position: relative;
+}
+.bobo .rtbo .ggmk .tbqh p {
+	width: 90px;
+	height: 44px;
+	float: left;
+	line-height: 44px;
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+	cursor: pointer;
+}
+.bobo .rtbo .ggmk .tbqh p.hov {
+	color: #222222;
+	font-weight: bold;
+}
+.bobo .rtbo .ggmk .tbqh span {
+	height: 44px;
+	line-height: 44px;
+	float: right;
+	margin-right: 5px;
+	font-size: 12px;
+	color: #0893f3;
+	cursor: pointer;
+}
+.bobo .rtbo .ggmk .tbqh i {
+	width: 90px;
+	height: 2px;
+	background: #2e5eb5;
+	position: absolute;
+	bottom: -2px;
+	left: 0px;
+	transition: all 0.5s ease-in-out;
+}
+.bobo .rtbo .ggmk .qhbo {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.bobo .rtbo .ggmk .qhbo .qh {
+	width: 476px;
+	height: 100%;
+	float: left;
+	transition: all 0.5s ease-in-out;
+}
+.bobo .rtbo .ggmk .qhbo .qh .tzdb {
+	width: 238px;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.bobo .rtbo .ggmk .qhbo .qh .tzdb .tznb {
+	width: 238px;
+	float: left;
+}
+.bobo .rtbo .ggmk .qhbo .qh .tzdb .tznb .ttxx {
+	width: 100%;
+	height: 51px;
+	float: left;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+/**/
+
+.bobo .rtbo .ggmk .qhbo .qh .tzdb .tznb .ttxx .bt {
+	width: 100%;
+	height: 30px;
+	float: left;
+	font-size: 14px;
+	line-height: 30px;
+	color: #333;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+	border-bottom: 1px solid #e7e7f3;
+}
+.bobo .rtbo .ggmk .qhbo .qh .tzdb .tznb .ttxx .bt:hover {
+	color: #6386e1;
+	border-bottom: 1px solid #6386e1;
+}
+.bobo .rtbo .ggmk .qhbo .qh .tzdb .tznb .ttxx .sj {
+	width: 100%;
+	height: 21px;
+	float: left;
+	border-bottom: 1px dashed #999999;
+	line-height: 20px;
+	font-size: 12px;
+	color: #999999;
+	cursor: pointer;
+}
+
 /*中间*/
-.bobo .cenbo .cennr{width: 100%; height: 100%;float: left;padding: 5px;box-sizing: border-box;}
-.bobo .cenbo .cennr .nrbo{width: 100%; height: 100%;float: left; position: relative; overflow: hidden; }
-.bobo .cenbo .cennr .nrbo .zjnrbo{width: 100%; float: left; padding: 5px; box-sizing: border-box;}
-.bobo .cenbo .cennr .nrbo .zysy{width: 100%; height: 548px; float: left;-webkit-box-shadow: #ccc 0px 0px 10px;-moz-box-shadow: #ccc 0px 0px 10px;box-shadow: #ccc 0px 0px 10px;}
-.bobo .cenbo .cennr .nrbo .zysy.gzrz {margin-top: 12px; height: auto;}
 
-
-.bobo .cenbo .cennr .nrbo .zysy .zjtb{width: 100%;height: 46px;float: left;background: #f4f4fa; border-bottom: 2px solid #f1f1f1; position: relative;}
-.bobo .cenbo .cennr .nrbo .zysy .zjtb i{width: 120px; height: 2px; background: #2e5eb5; position: absolute;bottom: -2px;left: 0px;}
-.bobo .cenbo .cennr .nrbo .zysy .zjtb .qhp{width: 120px;height: 46px;float: left;line-height: 46px; cursor: pointer;}
-.bobo .cenbo .cennr .nrbo .zysy .zjtb .qhp.hov{background: #FFFFFF;}
-.bobo .cenbo .cennr .nrbo .zysy .zjtb .qhp span{width: 90px;height: 46px;float: left;line-height: 46px; margin-left: 15px; text-align: center;}
-.bobo .cenbo .cennr .nrbo .zysy .zjtb .sjxz{width: 240px; height: 34px; float: right;margin-right: 10px; margin-top: 6px; padding: 1px 1px 1px 50px;box-sizing: border-box; background: url(../img/rq-bg.png) no-repeat  center center;}
-.bobo .cenbo .cennr .nrbo .zysy .zjtb .sjxz .rqfw{width: 100%; height: 100%;float: left;line-height: 32px;text-indent: 5px; font-size: 14px;color:#4e62ae;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo{width: 100%; height: 500px; float: left; background: #f5fbff;  position: relative;}
+.bobo .cenbo .cennr {
+	width: 100%;
+	height: 100%;
+	float: left;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.bobo .cenbo .cennr .nrbo {
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.bobo .cenbo .cennr .nrbo .zjnrbo {
+	width: 100%;
+	float: left;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.bobo .cenbo .cennr .nrbo .zysy {
+	width: 100%;
+	height: 548px;
+	float: left;
+	-webkit-box-shadow: #ccc 0px 0px 10px;
+	-moz-box-shadow: #ccc 0px 0px 10px;
+	box-shadow: #ccc 0px 0px 10px;
+}
+.bobo .cenbo .cennr .nrbo .zysy.gzrz {
+	margin-top: 12px;
+	height: auto;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjtb {
+	width: 100%;
+	height: 46px;
+	float: left;
+	background: #f4f4fa;
+	border-bottom: 2px solid #f1f1f1;
+	position: relative;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjtb i {
+	width: 120px;
+	height: 2px;
+	background: #2e5eb5;
+	position: absolute;
+	bottom: -2px;
+	left: 0px;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjtb .qhp {
+	width: 120px;
+	height: 46px;
+	float: left;
+	line-height: 46px;
+	cursor: pointer;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjtb .qhp.hov {
+	background: #FFFFFF;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjtb .qhp span {
+	width: 90px;
+	height: 46px;
+	float: left;
+	line-height: 46px;
+	margin-left: 15px;
+	text-align: center;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjtb .sjxz {
+	width: 240px;
+	height: 34px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 6px;
+	padding: 1px 1px 1px 50px;
+	box-sizing: border-box;
+	background: url(../img/rq-bg.png) no-repeat center center;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjtb .sjxz .rqfw {
+	width: 100%;
+	height: 100%;
+	float: left;
+	line-height: 32px;
+	text-indent: 5px;
+	font-size: 14px;
+	color: #4e62ae;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo {
+	width: 100%;
+	height: 500px;
+	float: left;
+	background: #f5fbff;
+	position: relative;
+}
 
 /*中间部分*/
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj{width: 100%; height: 320px; float: left;position:  relative; }
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq01{width: 130px; height: 130px; position: absolute;top: 50%; left: 50%;margin-top:-65px; margin-left: -65px; background:#FFFFFF url(../img/cen_img/zj_xr.png) no-repeat center center; border-radius: 50%;  box-shadow:#99d8fd 0px 0px 80px 5px; z-index: 50; }
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02{width: 450px; height: 150px; position: absolute;top: 50%; left: 50%;margin-top:-75px; margin-left: -225px; border-radius: 50%;  box-shadow:#99d8fd 0px 0px 120px 5px; z-index: 49;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02.nei{/*animation: animtran_n 40s linear infinite;  -webkit-animation: animtran_n 40s linear infinite;*/}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 .liage{width: 100%;height: 100%;float: left; position: relative; border-radius: 50%; }
 
-
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 .liage .dingw{width: 1px;height: 1px;position: absolute;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 .liage .dingw .ndkh{width: 60px; position: absolute;top: -30px;left: -37.5px;/*animation: animtran_w 40s linear infinite;  -webkit-animation: animtran_w 40s linear infinite;*/}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 .liage .dingw .jxjs{width: 60px; position: absolute;top: -30px;left: -37.5px;/*animation: animtran_w 40s linear infinite;  -webkit-animation: animtran_w 40s linear infinite;*/}
-
-
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj {
+	width: 100%;
+	height: 320px;
+	float: left;
+	position: relative;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq01 {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -45px;
+	margin-left: -45px;
+	background: #FFFFFF url(../img/cen_img/zj_xr.png) no-repeat center center;
+	border-radius: 50%;
+	box-shadow: #99d8fd 0px 0px 80px 5px;
+	z-index: 50;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 {
+	width: 450px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -75px;
+	margin-left: -225px;
+	border-radius: 50%;
+	box-shadow: #99d8fd 0px 0px 120px 5px;
+	z-index: 49;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02.nei {
+	/*animation: animtran_n 40s linear infinite;  -webkit-animation: animtran_n 40s linear infinite;*/
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 .liage {
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+	border-radius: 50%;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 .liage .dingw {
+	width: 1px;
+	height: 1px;
+	position: absolute;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 .liage .dingw .ndkh {
+	width: 60px;
+	position: absolute;
+	top: -30px;
+	left: -37.5px;
+	/*animation: animtran_w 40s linear infinite;  -webkit-animation: animtran_w 40s linear infinite;*/
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 .liage .dingw .jxjs {
+	width: 60px;
+	position: absolute;
+	top: -30px;
+	left: -37.5px;
+	/*animation: animtran_w 40s linear infinite;  -webkit-animation: animtran_w 40s linear infinite;*/
+}
 
 /*提示信息等会儿*/
 
-
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03{width: 650px; height: 250px; position: absolute;top: 50%; left: 50%;margin-top:-125px; margin-left: -325px; border-radius: 50%;  box-shadow:#99d8fd 0px 0px 180px 5px; z-index: 48;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03.wai{/*animation: animtran_w 35s linear infinite;  -webkit-animation: animtran_w 35s linear infinite;*/}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange{width: 100%; height: 100%; float: left;position: relative;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw{width: 1px;height: 1px;position: absolute;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .jzjs{width: 70px; position: absolute; top: -44.5px; left: -35px;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .bzjl{width: 70px; position: absolute; top:-44.5px; left: -35px;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .grjl{width: 70px; position: absolute; top:-44.5px; left: -35px;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .xxpx{width: 70px; position: absolute; top:-44.5px; left: -35px;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_01{position: absolute; top: 32px; left: 600px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_02{position: absolute; top: -10px; left: 300px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_03{position: absolute; top: 0px; left: 280px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_04{position: absolute; top: 6px; left: 288px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_05{position: absolute; top: 4px; left: 250px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_06{position: absolute; top: 100px; left: -5px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_07{position: absolute; top: 120px; left: 5px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_08{position: absolute; top: 122px; left: -8px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_09{position: absolute; top: 130px; left: 18px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_10{position: absolute; top: 130px; left: -30px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_11{position: absolute; top: 122px; left: 400px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_12{position: absolute; top: 130px; left: 380px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_13{position: absolute; top: 140px; left: 390px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_14{position: absolute; top: 150px; left: 405px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_15{position: absolute; top: 211px; left: 40px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_16{position: absolute; top: 64px; left: 700px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_17{position: absolute; top: 250px; left: 341px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_18{position: absolute; top: 260px; left: 366px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_20{position: absolute; top: 242px; left: 338px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_21{position: absolute; top: 170px; left: -5px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_22{position: absolute; top: 57px; left: 650px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_23{position: absolute; top: 20px; left: 600px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_24{position: absolute; top: 60px; left: 630px;animation:change1 10s linear infinite; -webkit-animation: change1 10s linear infinite;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_25{position: absolute; top: 160px; left: 650px;animation:change2 10s linear infinite; -webkit-animation: change2 10s linear infinite;}
-
-
-
-
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .dibu{width: 100%; height: 170px; float: left; margin-top: 10px;}
-.bobo .cenbo .cennr .nrbo .zysy .zjbo .dibu img{display: block; margin: 0 auto;}
-
-
-.bobo .cenbo .cennr .nrbo .zysy .rili{width: 100%; float: left; padding: 0 10px 10px 10px; box-sizing: border-box;}
-
-
-
-.lstbo{width: 400px; height: 248px; position:absolute; display: none; background: url(../img/cen_img/list-bg.png) no-repeat center center; z-index: 52;padding: 10px 10px 20px 10px; box-sizing: border-box;}
-.lstbo.ndkh{ background: url(../img/cen_img/list-bg_ndkh.png) no-repeat center center;}
-.lstbo.tcbg{ background: url(../img/cen_img/list-bg.png) no-repeat center center;}
-.lstbo.jzjs{background: url(../img/cen_img/list-bg_jzjs.png) no-repeat center center;}
-.lstbo.jxjs{background: url(../img/cen_img/list-bg_jxjs.png) no-repeat center center;}
-.lstbo.bzjl{background: url(../img/cen_img/list-bg_bzjl.png) no-repeat center center;}
-
-.lstbo .lstnr{width: 100%; height: 100%; float: left; border-left: 1px solid #FFFFFF;}
-.lstbo .lstnr p{width: 100%;line-height: 20px;float: left;padding: 5px 15px 2px 16px; margin-left: -4px; background: url(../img/cen_img/baid.png) no-repeat left 11px; font-size: 14px; color: #FFFFFF;box-sizing: border-box;}
-
-
-
-  @keyframes animtran_w {
-    from {
-      transform: rotateZ(0deg);
-    }
-    to {
-      transform: rotateZ(360deg);
-    }
-  }
-  
-
-  @keyframes animtran_n {
-    from {
-      transform: rotateZ(360deg);
-    }
-    to {
-      transform: rotateZ(0deg);
-    }
-  }
- 
-
-	@keyframes change1 {
-	  0% {
-	    transform: translateY(0px);
-	  }
-	  50% {
-		  transform: translateY(-20px);
-	  }
-	  100% {
-	    transform: translateY(0px);
-	  }
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 {
+	width: 650px;
+	height: 250px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -325px;
+	border-radius: 50%;
+	box-shadow: #99d8fd 0px 0px 180px 5px;
+	z-index: 48;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03.wai {
+	/*animation: animtran_w 35s linear infinite;  -webkit-animation: animtran_w 35s linear infinite;*/
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange {
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw {
+	width: 1px;
+	height: 1px;
+	position: absolute;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .jzjs {
+	width: 70px;
+	position: absolute;
+	top: -44.5px;
+	left: -35px;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .bzjl {
+	width: 70px;
+	position: absolute;
+	top: -44.5px;
+	left: -35px;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .grjl {
+	width: 70px;
+	position: absolute;
+	top: -44.5px;
+	left: -35px;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .xxpx {
+	width: 70px;
+	position: absolute;
+	top: -44.5px;
+	left: -35px;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_01 {
+	position: absolute;
+	top: 32px;
+	left: 600px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_02 {
+	position: absolute;
+	top: -10px;
+	left: 300px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_03 {
+	position: absolute;
+	top: 0px;
+	left: 280px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_04 {
+	position: absolute;
+	top: 6px;
+	left: 288px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_05 {
+	position: absolute;
+	top: 4px;
+	left: 250px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_06 {
+	position: absolute;
+	top: 100px;
+	left: -5px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_07 {
+	position: absolute;
+	top: 120px;
+	left: 5px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_08 {
+	position: absolute;
+	top: 122px;
+	left: -8px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_09 {
+	position: absolute;
+	top: 130px;
+	left: 18px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_10 {
+	position: absolute;
+	top: 130px;
+	left: -30px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_11 {
+	position: absolute;
+	top: 122px;
+	left: 400px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_12 {
+	position: absolute;
+	top: 130px;
+	left: 380px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_13 {
+	position: absolute;
+	top: 140px;
+	left: 390px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_14 {
+	position: absolute;
+	top: 150px;
+	left: 405px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_15 {
+	position: absolute;
+	top: 211px;
+	left: 40px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_16 {
+	position: absolute;
+	top: 64px;
+	left: 700px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_17 {
+	position: absolute;
+	top: 250px;
+	left: 341px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_18 {
+	position: absolute;
+	top: 260px;
+	left: 366px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_20 {
+	position: absolute;
+	top: 242px;
+	left: 338px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_21 {
+	position: absolute;
+	top: 170px;
+	left: -5px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_22 {
+	position: absolute;
+	top: 57px;
+	left: 650px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_23 {
+	position: absolute;
+	top: 20px;
+	left: 600px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_24 {
+	position: absolute;
+	top: 60px;
+	left: 630px;
+	animation: change1 10s linear infinite;
+	-webkit-animation: change1 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .yd_25 {
+	position: absolute;
+	top: 160px;
+	left: 650px;
+	animation: change2 10s linear infinite;
+	-webkit-animation: change2 10s linear infinite;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .dibu {
+	width: 100%;
+	height: 170px;
+	float: left;
+	margin-top: 10px;
+}
+.bobo .cenbo .cennr .nrbo .zysy .zjbo .dibu img {
+	display: block;
+	margin: 0 auto;
+}
+.bobo .cenbo .cennr .nrbo .zysy .rili {
+	width: 100%;
+	float: left;
+	padding: 0 10px 10px 10px;
+	box-sizing: border-box;
+}
+.lstbo {
+	width: 400px;
+	height: 248px;
+	position: absolute;
+	display: none;
+	background: url(../img/cen_img/list-bg.png) no-repeat center center;
+	z-index: 52;
+	padding: 10px 10px 20px 10px;
+	box-sizing: border-box;
+}
+.lstbo.ndkh {
+	background: url(../img/cen_img/list-bg_ndkh.png) no-repeat center center;
+}
+.lstbo.tcbg {
+	background: url(../img/cen_img/list-bg.png) no-repeat center center;
+}
+.lstbo.jzjs {
+	background: url(../img/cen_img/list-bg_jzjs.png) no-repeat center center;
+}
+.lstbo.jxjs {
+	background: url(../img/cen_img/list-bg_jxjs.png) no-repeat center center;
+}
+.lstbo.bzjl {
+	background: url(../img/cen_img/list-bg_bzjl.png) no-repeat center center;
+}
+.lstbo .lstnr {
+	width: 100%;
+	height: 100%;
+	float: left;
+	border-left: 1px solid #FFFFFF;
+}
+.lstbo .lstnr p {
+	width: 100%;
+	line-height: 20px;
+	float: left;
+	padding: 5px 15px 2px 16px;
+	margin-left: -4px;
+	background: url(../img/cen_img/baid.png) no-repeat left 11px;
+	font-size: 14px;
+	color: #FFFFFF;
+	box-sizing: border-box;
+}
+@keyframes animtran_w {
+	from {
+		transform: rotateZ(0deg);
 	}
-	@keyframes change2 {
-	  0% {
-	    transform: translateY(0px);
-	  }
-	  50% {
-		  transform: translateY(20px);
-	  }
-	  100% {
-	    transform: translateY(0px);
-	  }
+	to {
+		transform: rotateZ(360deg);
 	}
-	
+}
+@keyframes animtran_n {
+	from {
+		transform: rotateZ(360deg);
+	}
+	to {
+		transform: rotateZ(0deg);
+	}
+}
+@keyframes change1 {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+@keyframes change2 {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
 
+/*修改*/
 
+.gdsp {
+	font-family: 宋体;
+	margin-left: 3px;
+}
+.zssg {
+	width: 100%;
+	float: left;
+	position: relative;
+}
 
 /*登录*/
-.logbg{width: 100%; height: 100%;background: url(../img/login_bg.png)no-repeat center center;background-size: cover; position: relative;}
-.zjbf{width: 100%; height: 450px; position: absolute; left: 0; top: 50%;margin-top: -225px;}
-.login_bz{width: 100%; float: left;}
-.login_bz .loginbz {width: 358px; height:150px; margin: 0 auto; background: url(../img/login_bz.png);}
-.logincon{width: 100%; height: 250px;float: left;background: rgba(53,116,201,0.7); margin-top: 50px;}
-.lognr{width:300px; height: 250px; margin: 0 auto; padding: 10px 0; box-sizing:border-box;}
-.lognr .yih{width: 100%;height: 50px;float: left; border-bottom: 1px solid #fff; padding-left: 40px; box-sizing: border-box;}
-.lognr .yih.user{background: url(../img/user.png)no-repeat 8px 20px;}
-.lognr .yih.pwd{background: url(../img/pwd.png)no-repeat 8px 20px;}
-.lognr .yih.yzm{padding: 0px;}
-.iput{width: 100%; height: 30px; line-height: 30px; color: #FFF; background: none; margin-top: 20px; font-size: 15px;}
-.iputyz{width: 200px; height: 30px; line-height: 30px; color: #FFF; background: none; margin-top: 20px; text-indent: 8px;}
-.yzmimg{height: 30px; float: right;margin-top: 20px;}
-.btndl{width: 100%; height: 40px; float: left; margin-top: 20px; background: #a9afff; border-radius: 5px!important; color: #FFFFFF;font-size: 16px;}
+
+.logbg {
+	width: 100%;
+	height: 100%;
+	background: url(../img/login_bg.png)no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+.zjbf {
+	width: 100%;
+	height: 450px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -225px;
+}
+.login_bz {
+	width: 100%;
+	float: left;
+}
+.login_bz .loginbz {
+	width: 385px;
+	height: 150px;
+	margin: 0 auto;
+	background: url(../img/login_bz.png)no-repeat center center;
+}
+.logincon {
+	width: 100%;
+	height: 250px;
+	float: left;
+	background: rgba(53, 116, 201, 0.7);
+	margin-top: 50px;
+}
+.lognr {
+	width: 300px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+.lognr .yih {
+	width: 100%;
+	height: 50px;
+	float: left;
+	border-bottom: 1px solid #fff;
+	padding-left: 40px;
+	box-sizing: border-box;
+}
+.lognr .yih.user {
+	background: url(../img/user.png)no-repeat 8px 20px;
+}
+.lognr .yih.pwd {
+	background: url(../img/pwd.png)no-repeat 8px 20px;
+}
+.lognr .yih.yzm {
+	padding: 0px;
+}
+.iput {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	color: #FFF;
+	background: none;
+	margin-top: 20px;
+	font-size: 15px;
+}
+.iputyz {
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	color: #FFF;
+	background: none;
+	margin-top: 20px;
+	text-indent: 8px;
+}
+.yzmimg {
+	height: 30px;
+	float: right;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.btndl {
+	width: 120px;
+	height: 40px;
+	margin-top: 20px;
+	background: #a9afff;
+	border-radius: 5px!important;
+	color: #FFFFFF;
+	font-size: 16px;
+	cursor: pointer;
+}
+.btndl.lf {
+	float: left;
+}
+.btndl.rt {
+	float: right;
+}
+.tznb .lbk{height: 85px; margin-top: 5px; position: relative;}
+.tznb .lbk .num{width: 16px; height: 16px; line-height: 15px; position: absolute; right: 7px; top: 7px; z-index: 23; border-radius: 16px; background: #ff3300; color: #FFFFFF; font-size: 12px; text-align: center;}
+.tznb .lbk .lbim_new .mask{margin-left: 13px;}

@@ -20,14 +20,14 @@
                 </div>
                 <div class="lognr">
                     <div class="yih user">
-                        <input id="username" name="policeNum"  type="text" class="name required iput"
+                        <input id="username" name="policeNum" value="admin"  type="text" class="name required iput"
                                th:disabled="${guaEnabled}"
                                th:field="*{username}"
                                th:accesskey="#{screen.welcome.label.netid.accesskey}"
                                autocomplete="off"/>
                     </div>
                     <div class="yih pwd">
-                        <input id="password" name="password" type="password" class="password iput"
+                        <input id="password" name="password" type="password" value="123" class="password iput"
                                th:accesskey="#{screen.welcome.label.password.accesskey}"
                                th:field="*{password}"
                                autocomplete="off"/>
@@ -36,7 +36,8 @@
                     <input type="hidden" name="execution" th:value="${flowExecutionKey}"/>
                     <input type="hidden" name="_eventId" value="submit"/>
                     <input type="hidden" name="geolocation"/>
-                    <input type="submit" value="登  录" class="btndl" name="submit" accesskey="l" />
+                    <input type="submit" value="登  录" class="btndl lf" name="submit" accesskey="l" />
+                    <input type="button" value="数字证书" class="btndl rt"/>
                 </div>
             </form>
         </div>
@@ -44,3 +45,7 @@
 </div>
 </body>
 </html>
+<script type="text/javascript">
+    document.getElementById("username").value='admin';
+    document.getElementById("password").value=123;
+</script>
