@@ -1,5 +1,5 @@
 body, html {
-	min-width: 1300px;
+	width: 1000px;
 	height: 100%;
 	font-family: "微软雅黑";
 }
@@ -597,7 +597,7 @@ a {
 }
 .bobo .cenbo .cennr .nrbo .zysy {
 	width: 100%;
-	height: 548px;
+	height: 498px;
 	float: left;
 	-webkit-box-shadow: #ccc 0px 0px 10px;
 	-moz-box-shadow: #ccc 0px 0px 10px;
@@ -662,7 +662,7 @@ a {
 }
 .bobo .cenbo .cennr .nrbo .zysy .zjbo {
 	width: 100%;
-	height: 500px;
+	height: 450px;
 	float: left;
 	background: #f5fbff;
 	position: relative;
@@ -677,26 +677,27 @@ a {
 	position: relative;
 }
 .bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq01 {
-	width: 90px;
-	height: 90px;
+	width: 50px;
+	height: 50px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -45px;
-	margin-left: -45px;
+	margin-top: -25px;
+	margin-left: -25px;
 	background: #FFFFFF url(../img/cen_img/zj_xr.png) no-repeat center center;
+	background-size: 35px;
 	border-radius: 50%;
 	box-shadow: #99d8fd 0px 0px 80px 5px;
 	z-index: 50;
 }
 .bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 {
-	width: 450px;
-	height: 150px;
+	width: 250px;
+	height: 100px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -75px;
-	margin-left: -225px;
+	margin-top: -50px;
+	margin-left: -125px;
 	border-radius: 50%;
 	box-shadow: #99d8fd 0px 0px 120px 5px;
 	z-index: 49;
@@ -717,14 +718,14 @@ a {
 	position: absolute;
 }
 .bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 .liage .dingw .ndkh {
-	width: 60px;
+	width: 50px;
 	position: absolute;
 	top: -30px;
 	left: -37.5px;
 	/*animation: animtran_w 40s linear infinite;  -webkit-animation: animtran_w 40s linear infinite;*/
 }
 .bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq02 .liage .dingw .jxjs {
-	width: 60px;
+	width: 50px;
 	position: absolute;
 	top: -30px;
 	left: -37.5px;
@@ -734,13 +735,13 @@ a {
 /*提示信息等会儿*/
 
 .bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 {
-	width: 650px;
-	height: 250px;
+	width: 450px;
+	height: 200px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -125px;
-	margin-left: -325px;
+	margin-top: -100px;
+	margin-left: -225px;
 	border-radius: 50%;
 	box-shadow: #99d8fd 0px 0px 180px 5px;
 	z-index: 48;
@@ -760,25 +761,25 @@ a {
 	position: absolute;
 }
 .bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .jzjs {
-	width: 70px;
+	width: 60px;
 	position: absolute;
 	top: -44.5px;
 	left: -35px;
 }
 .bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .bzjl {
-	width: 70px;
+	width: 60px;
 	position: absolute;
 	top: -44.5px;
 	left: -35px;
 }
 .bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .grjl {
-	width: 70px;
+	width: 60px;
 	position: absolute;
 	top: -44.5px;
 	left: -35px;
 }
 .bobo .cenbo .cennr .nrbo .zysy .zjbo .zhj .yq03 .sange .dingw .xxpx {
-	width: 70px;
+	width: 60px;
 	position: absolute;
 	top: -44.5px;
 	left: -35px;
@@ -953,11 +954,12 @@ a {
 }
 .bobo .cenbo .cennr .nrbo .zysy .zjbo .dibu {
 	width: 100%;
-	height: 170px;
+	height: 111px;
 	float: left;
-	margin-top: 10px;
+	margin-top: 19px;
 }
 .bobo .cenbo .cennr .nrbo .zysy .zjbo .dibu img {
+	width: 100%;
 	display: block;
 	margin: 0 auto;
 }
