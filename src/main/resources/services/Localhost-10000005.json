@@ -4,6 +4,5 @@
   "name": "local",
   "id": 10000005,
   "description": "all",
-  "evaluationOrder": 10000000,
-  "theme":"demo"
+  "evaluationOrder": 10000000
 }
