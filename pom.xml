@@ -57,11 +57,11 @@
             <version>5.1.36</version>
         </dependency>
         <!-- cas-server提供oauth2.0功能 -->
-        <dependency>
+       <!-- <dependency>
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-support-oauth-webflow</artifactId>
             <version>${cas.version}</version>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>org.apereo.cas</groupId>
